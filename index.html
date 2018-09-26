@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Timer </title>
+</head>
+<body>
+<button id ="StopClock"> Stop Clock </button>
+<div id="clock">
+
+</div>
+<script>
+    myTimer = setInterval(myFunction, 3000);
+
+    function myFunction() {
+        var randNum = Math.ceil(Math.random() * 5);
+        //alert(randNum);
+        document.getElementById("clock").innerHTML += "the random number is " + randNum + "<br />";
+    }
+
+    document.getElementById('StopClock').addEventListener("click", function() {
+        clearInterval(myTimer);
+        document.getElementById("clock").innerHTML = "clock stopped";
+    });
+</script>
+</body>
+</html>
