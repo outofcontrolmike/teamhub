@@ -4,8 +4,8 @@
 
 
 // form tag holding inside: input tag with type = text; 2; seperate id names for the user to input name and second one for phone number;
-var name = document.getElementById('T.B.D.').nodeValue;
-var numPhone = document.getElementById('T.B.D.').nodeValue;
+var name = document.getElementById('home').nodeValue;
+var numPhone = document.getElementById('home').nodeValue;
 
 // selection tag with the numbers 1 - 10;
 
