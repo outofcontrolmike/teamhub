@@ -1,0 +1,10 @@
+body{
+	background-image: linear-gradient(to right, white, black);
+}
+.pretty{
+	margin: auto;
+	width: 75%;
+	text-align: center;
+	background-image: linear-gradient(to right, orange, yellow);
+	min-height: 500px;
+	}
