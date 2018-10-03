@@ -1,18 +1,24 @@
-@font-face{
-	font-family: 'pizza';
-	src: url('./OrderPizza.ttf');
+@font-face {
+  font-family: 'pizza';
+  src: url('./OrderPizza.ttf');
 }
-body{
-	background-image: linear-gradient(to right, white, black);
+
+body {
+  background-image: linear-gradient(to right, white, black);
 }
-.pretty{
-	margin: auto;
-	width: 75%;
-	text-align: center;
-	background-image: linear-gradient(to right, orange, yellow, orange);
-	min-height: 500px;
-	}
-	.pretty h1{
-		font-family: pizza;
-			background-image: linear-gradient(to right, red, White, red)
-	}
+
+.pretty {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  background-image: linear-gradient(to right, orange, yellow, orange);
+  min-height: 500px;
+}
+
+.pretty h1 {
+  font-family: pizza;
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
