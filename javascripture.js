@@ -8,7 +8,7 @@ function pizza() {
     var z = document.getElementById('select');
     var x = z.options[z.selectedIndex].value;
     var pizza = ["Peperoni", "Cheese", "Three Meat", "Supreme", "Today's Special"]
-
+    var cost = price(x);
     for (var i = 0; i < x; i++) {
         document.getElementById('here').innerHTML += "<br />";
         var slt = document.createElement('select');
@@ -28,6 +28,17 @@ function pizza() {
     }
 }
 
+function price(x) {
+    var subTot = 7.99 * x;
+    var tax = subTot * 0.076;
+    var total = subTot + tax;
+    var cost = ("Sub total: $" + subTot.toFixed(2) + "<br />");
+    cost += ("Tax: $" + tax.toFixed(2) + "<br />");
+    cost += ("Total: $" + total.toFixed(2) + "<br />");
+
+    document.getElementById('order-list').innerHTML += cost;
+}
+
 function print() {
     document.getElementById('order-list').innerHTML = "";
     var z = document.getElementById('select');
@@ -38,6 +49,15 @@ function print() {
         var ent = slct.options[slct.selectedIndex].value;
         document.getElementById('order-list').innerHTML += ("Pizza " + (i + 1) + " is a " + ent + ". <br />");
     }
+    price(x);
+}
+
+function reset() {
+    document.getElementById('here').innerHTML = "";
+    document.getElementById('order-list').innerHTML = "";
+    document.getElementById('select').selectedIndex = 0;
+    document.getElementById('name').value = "";
+    document.getElementById('number').value = "";
 }
 
 function swap() {
