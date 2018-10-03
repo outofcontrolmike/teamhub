@@ -11,62 +11,62 @@
 </head>
 <body>
 	<div class="pretty">
-	<h1>Welcome to Cheech's Pizza</h1>
-    <!-- container that displays on screen -->
-    <container>
-          <!-- form tag holding inside: input tag with type = text; 2; seperate id names for the user to input name and second one for phone number; -->
-        <section id="homePage">
-            <form>
-                Name:<br />
-                <input type="text" name="name" id="name"><br />
-                Phone Number:<br />
-                <input type="text" name="phone-number" id="number"><br />
+	    <h1>Welcome to Cheech's Pizza</h1>
+        <!-- container that displays on screen -->
+        <container>
+              <!-- form tag holding inside: input tag with type = text; 2; seperate id names for the user to input name and second one for phone number; -->
+            <section id="homePage">
+                <form>
+                    Name:<br />
+                    <input type="text" name="name" id="name"><br />
+                    Phone Number:<br />
+                    <input type="text" name="phone-number" id="number"><br />
 
-                <!-- selection tag with the numbers 1 - 10; -->
-                <select id="select" onchange="pizza()">
-                    <option value="pc" style="display: none;"> How many pizzas would you like to order? </option>
-                    <option value="1"> 1 </option>
-                    <option value="2"> 2 </option>
-                    <option value="3"> 3 </option>
-                    <option value="4"> 4 </option>
-                    <option value="5"> 5 </option>
-                    <option value="6"> 6 </option>
-                    <option value="7"> 7 </option>
-                    <option value="8"> 8 </option>
-                    <option value="9"> 9 </option>
-                    <option value="10"> 10 </option>
-                </select>
+                    <!-- selection tag with the numbers 1 - 10; -->
+                    <select id="select" onchange="pizza()">
+                        <option value="pc" style="display: none;"> How many pizzas would you like to order? </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                        <option value="9"> 9 </option>
+                        <option value="10"> 10 </option>
+                    </select>
 
-                <div id="here"></div>
+                    <div id="here"></div>
 
-                <br />
-                <input type="button" name="Order" id="Order" onclick="swap()" value="Place this pizza order">
-                <br />
-            </form>
-        </section>
-    </container>
+                    <br />
+                    <input type="button" name="Order" id="Order" onclick="swap()" value="Place this pizza order">
+                    <br />
+                </form>
+            </section>
+        </container>
 
-    <container id="reciept">
-        <section id="welcome">
+        <container id="reciept">
+            <section id="welcome">
 
-            <!-- // another button with text "Place Another Order?" or something else. -->
-            <!--<input type="button" name="home" id="home" onclick="swap()" value="Want to place another order?">-->
-                <!--Want to place another order?
-            </button>-->
+                <!-- // another button with text "Place Another Order?" or something else. -->
+                <!--<input type="button" name="home" id="home" onclick="swap()" value="Want to place another order?">-->
+                    <!--Want to place another order?
+                </button>-->
 
 
-        </section>
-        <div id="order-list">
+            </section>
+            <div id="order-list">
 
-        </div>
+            </div>
 
-        <button id="home" onclick="swap(), reset()"> Want to place another order? </button>
-    </container>
+            <button id="home" onclick="swap()"> Want to place another order? </button>
+        </container>
 
-    <!-- second for when they hit the button at bottom of the page below the form; -->
+        <!-- second for when they hit the button at bottom of the page below the form; -->
 
-<!-- in the second container, a div for the name and number then another div for the order (id for each to call below); -->
+        <!-- in the second container, a div for the name and number then another div for the order (id for each to call below); -->
 
-</div>
+    </div>
 </body>
 </html>

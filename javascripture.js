@@ -70,6 +70,7 @@ function swap() {
     if (main.style.display == "none") {
         main.style.display = 'block';
         sub.style.display = 'none';
+        reset();
     } else if (sub.style.display == "none") {
 
         if (name.value == "" || numPhone.value == "") {
@@ -98,6 +99,12 @@ function swap() {
 
 function start() {
     document.getElementById('reciept').style.display = 'none';
+
+    var x = document.createElement('audio');
+    x.src = 'pizza.mp3';
+    x.setAttribute('loop', 'true');
+    x.play();
+    document.body.appendChild(x);
 }
 
 window.addEventListener("load", start);

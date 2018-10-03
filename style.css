@@ -13,6 +13,7 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, orange, yellow, orange);
   min-height: 500px;
+  padding: 2%;
 }
 
 .pretty h1 {
@@ -21,4 +22,8 @@ body {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+select, button {
+    margin: 2%;
 }
